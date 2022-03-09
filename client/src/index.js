@@ -1,19 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import pingURL from './App';
+import ReactDOM from "react-dom";
+import React, { useState } from "react";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import PingFormMain from "./Ping/PingFormMain";
+import PingResultsMain from "./Ping/PingResultsMain";
+import { StyledEngineProvider } from "@mui/material/styles";
+import * as Mui from "@material-ui/core";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<PingFormMain />,
+	</React.StrictMode>,
+	document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
