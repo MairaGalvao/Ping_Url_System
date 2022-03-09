@@ -1,11 +1,7 @@
 .resultsMain{
-
-
-    width: 30%;
-    font-family: Arial, Helvetica, sans-serif;
-
+width: 30%;
+font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .slider{ 
 width: 50%;
@@ -13,30 +9,36 @@ margin: 10px
 }
 
 .resultsMain .header{
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #04AA6D;
-    color: white;
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #04AA6D;
+color: white;
 }
 
-.resultsMain .row:nth-child(even){background-color: #f2f2f2;}
+.resultsMain .row:nth-child(even){
+background-color: #f2f2f2;
+}
 
-.resultsMain .row:hover {background-color: #ddd;}
+.resultsMain .row:hover {
+background-color: #ddd;
+}
 
 .pingMain{
-    border-radius: 5px;
-    background-color: #ddd0d0;
-    padding: 20px;
+border-radius: 5px;
+background-color: #ddd0d0;
+padding: 20px;
 }
 
 .outputText{
-    width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-top: 6px;
+margin-bottom: 16px;
+}
 
-  margin-top: 6px;
-  margin-bottom: 16px;
-
+.headerText{
+font-weight: 100px;
 }
