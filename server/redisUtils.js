@@ -13,8 +13,12 @@ export async function getTopPings(client) {
 	redisArr = redisArr.sort(function (a, b) {
 		return parseInt(b.count) - parseInt(a.count);
 	});
+	redisArr = redisArr.reverse();
+	if (redisArr.length > 5) {
+		redisArr = redisArr.slice(0, 6);
+	}
 
-	return redisArr.slice(-6, -1);
+	return redisArr;
 }
 
 export async function setData(client, key) {
